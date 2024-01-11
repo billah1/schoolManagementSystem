@@ -1,0 +1,51 @@
+@extends('admin.master')
+
+@section('title')
+    Edit History page
+@endsection
+
+@section('body')
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card">
+                        <div class="card-header bg-success text-center text-white fw-bolder fs-3">Edit  Page    </div>
+                        <div class="card-body">
+
+                            <h1 class="text-success">{{ Session::has('message') ? Session::get('message') : '' }}</h1>
+
+                            <form action="{{route('updateHistory',['id'=>$our_history->id])}}" method="POST" enctype="multipart/form-data">
+                                @csrf
+
+                                <div class="row mb-3">
+                                    <label for="title" class="col-md-3">Add History Title</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" value="{{$our_history->title}}"  name="title"/>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="slider-description" class="col-md-3">Description</label>
+                                    <div class="col-md-9">
+                                        <textarea name="description"   class="form-control">{{$our_history->description}}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label class="col-md-3"></label>
+                                    <div class="col-md-9">
+                                        <input type="submit" class="form-control btn btn-success" value="Update History" style="color: white"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+@endsection

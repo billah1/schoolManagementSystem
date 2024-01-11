@@ -1,0 +1,742 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover{
+    text-decoration: none;
+}
+
+i,
+span,
+a{
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1d2025;
+    margin: 0px;
+}
+
+h1 {
+    font-weight: 500;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 28px;
+}
+
+
+   .marquee {
+       /*   overflow: hidden; */
+   }
+
+.marquee-content {
+    display: flex;
+    animation: scrolling 10s linear infinite;
+}
+
+
+
+
+
+.marquee-item img {
+    display: block;
+    width: 100%;
+    /*   padding: 0 20px; */
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translatex(-144vw); }
+}
+
+
+h4 {
+    font-size: 22px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+ul,ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #505050;
+    margin: 0px;
+}
+
+.bg_cover{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+/*================================================button*/
+
+.buttonHeader {
+    width: 150px; /* You can adjust the width as needed */
+    height: 40px;
+}
+
+/* Set left and right margin for buttons */
+.list-unstyled .buttonHeader li {
+    margin-left: 2px; /* Adjust the left margin */
+    margin-right: 2px; /* Adjust the right margin */
+}
+
+
+
+
+element.style {
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+ :host {
+     display: inline-block;
+     overflow: hidden;
+     text-align: initial;
+     white-space: nowrap;
+ }
+
+
+ .marquee-container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #E3FAF9;
+     line-height: 1.8!important;
+ }
+
+
+
+.col-md-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+
+.welcome{
+    background-color:#dad8d8;
+}
+
+
+
+.teachers{
+
+
+
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Times New Roman";
+
+
+}
+
+
+
+
+
+/*=====================================================
+    2. HEADER css
+======================================================*/
+
+
+/*===== Header top =====*/
+
+.header-top{
+    background-color: #07294d;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header-contact{}
+.header-contact ul{}
+.header-contact ul li{
+    display: inline-block;
+    margin-right: 45px;
+}
+.header-contact ul li:last-child{
+    margin-right: 0;
+}
+
+.header-contact ul li img{}
+.header-contact ul li span {
+    color: #dee2e6;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.header-opening-time{}
+.header-opening-time p {
+    color: #dee2e6;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/*===== Header Logo support =====*/
+
+.logo img{
+    height: 120px;
+}
+
+.header-logo-support{
+    border-bottom: 1px solid #cecece;
+    background:#b0e0e9;
+    /*//header background*/
+}
+
+.support-button{}
+.support-button .support {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 7px;
+}
+.support-button .support .icon{}
+.support-button .support .cont{
+    margin-left: 15px;
+    margin-top: -2px;
+}
+.support-button .support .cont p{
+    font-size: 13px;
+    color: #8a8a8a;
+    line-height: 18px
+}
+.support-button .support .cont span{
+    font-size: 18px;
+    color: #07294d;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.support-button .button{
+    margin-left: 60px;
+}
+
+/*===== Header Menu =====*/
+
+
+
+.right-icon{}
+.right-icon ul li{
+    display: inline-block;
+    margin-right: 17px;
+    padding: 22px 0;
+}
+.right-icon ul li:last-child{
+    margin-right: 0;
+}
+
+.right-icon ul li a{
+    font-size: 18px;
+    color: #07294d;
+    position: relative;
+    padding-right: 7px;
+}
+.right-icon ul li a span{
+    font-size: 12px;
+    color: #fff;
+    background-color: #ffc600;
+    border-radius: 50%;
+    padding: 0px 4px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+
+/*===== Index-2 =====*/
+
+.header-social ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.header-social ul li:first-child{
+    margin-left: 0;
+}
+
+.header-social ul li a{
+    font-size: 15px;
+    color: #dee2e6;
+}
+
+
+
+/*========================= slider ===============================*/
+/* Add this style for the sidebar and white background */
+
+
+
+
+
+/*=====================================================
+    13. FOOTER css
+======================================================*/
+
+.footer-top{
+    background-color:#b0e0e9;
+}
+
+.footer-about {
+    padding-right: 50px;
+}
+.footer-about p{
+    color: black;
+    padding-top: 15px;
+}
+.footer-about ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer-about ul li:last-child{
+    margin-right: 0;
+}
+
+.footer-about ul li a{
+    width: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #021d3a;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+
+}
+.footer-about ul li a:hover{
+    background-color: black;
+    color: black;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+
+}
+
+
+.footer-title h6{
+    font-size: 18px;
+    color:black;
+}
+
+.footer-link{
+    overflow: hidden;
+}
+.footer-link ul{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+.footer-link ul li{
+    line-height: 35px;
+}
+.footer-link ul li a{
+    color: black;
+    font-size: 15px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.footer-link ul li a i{
+    margin-right: 8px;
+    color: black;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+.footer-link ul li a:hover {
+    color: black;
+}
+.footer-link ul li a:hover i{
+    margin-right: 15px;
+}
+
+.support ul{
+    float: none;
+    width: 100%;
+}
+
+
+
+
+
+.footer-address ul li{
+    position: relative;
+    margin-bottom: 10px;
+}
+.footer-address ul li:last-child{
+    margin-bottom: 0;
+}
+
+.footer-address ul li .icon i{
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.footer-address ul li .cont{
+    padding-left: 35px;
+}
+.footer-address ul li .cont p{
+    color:black;
+}
+
+.footer-copyright{
+    background-color: #021d3a;
+}
+.footer-copyright .copyright p{
+    color:black;
+}
+.footer-copyright .copyright p span{
+    font-weight: 600;
+}
+
+.back-to-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    background-color: #ffc600;
+    color: #fff;
+    font-size: 28px;
+    border-radius: 5px;
+    z-index: 99;
+    text-align: center;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    display: none;
+}
+.back-to-top:hover{
+    color: #fff;
+    background-color: #021d3a;
+}
+/*// navber*/
+/* Common Styles */
+
+
+
+/*===== Header Menu =====*/
+
+
+.navigation{}
+
+.navigation.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    border-bottom: 1px solid #cecece;
+    -webkit-box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 191px 0px rgba(0,0,0,0.06);
+    -webkit-animation: sticky 2s;
+    animation: sticky 2s;
+}
+
+@-webkit-keyframes sticky {
+    0%{
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+@keyframes sticky {
+    0%{
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    100%{
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+}
+
+.navigation .navbar{
+    padding: 0;
+}
+
+.navigation .navbar .navbar-nav{}
+.navigation .navbar .navbar-nav li{
+    margin-right: 40px;
+    position: relative;
+}
+.navigation .navbar .navbar-nav li:last-child{
+    margin-right: 0;
+}
+
+.navigation .navbar .navbar-nav li a{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    padding: 25px 0;
+}
+
+.navigation .navbar .navbar-nav > li > a.active,
+.navigation .navbar .navbar-nav > li > a:hover{
+    color:black;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color:#b0e0e9;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    z-index: 99;
+}
+.navigation .navbar .navbar-nav li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.navigation .navbar .navbar-nav li .sub-menu li{
+    margin-right: 0;
+}
+.navigation .navbar .navbar-nav li .sub-menu li a{
+    padding: 10px 15px;
+    display: block;
+    border-bottom: black;
+    color: black;
+}
+.navigation .navbar .navbar-nav li .sub-menu li a.active,
+.navigation .navbar .navbar-nav li .sub-menu li a:hover{
+    padding-left: 20px;
+    color: white;
+}
+
+.sub-nav-toggler{
+    display: none;
+}
+
+
+.navigation ul.navbar-nav li.nav-item a.active,
+.navigation ul.navbar-nav li.nav-item a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* You can set the border color to transparent */
+}
+
+
+.navigation .navbar .navbar-nav li .sub-menu li:last-child a{
+    border-bottom: 0;
+}
+.navbar .navbar-toggler {
+    padding: 3px 8px;
+    margin: 18px 0;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.navbar .navbar-toggler .icon-bar {
+    width: 30px;
+    height: 2px;
+    background-color:black;
+    display: block;
+    margin: 5px 0;
+    position: relative;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(1){
+    -webkit-transform: rotate(46deg);
+    transform: rotate(46deg);
+    top: 7px;
+}
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(2){
+    opacity: 0;
+}
+.navbar .navbar-toggler.active .icon-bar:nth-of-type(3){
+    -webkit-transform: rotate(134deg);
+    transform: rotate(134deg);
+    top: -7px;
+}
+
+.right-icon{}
+.right-icon ul li{
+    display: inline-block;
+    margin-right: 17px;
+    padding: 22px 0;
+}
+.right-icon ul li:last-child{
+    margin-right: 0;
+}
+
+.right-icon ul li a{
+    font-size: 18px;
+    color: white;
+    position: relative;
+    padding-right: 7px;
+}
+.right-icon ul li a span{
+    font-size: 12px;
+    color: #fff;
+    background-color: #ffc600;
+    border-radius: 50%;
+    padding: 0px 4px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+}
+
+
+
+ /*========== popup=================*/
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+/*// common page */
+.containerCommon {
+    max-width: 1000px;
+    margin:  auto;
+    padding: 20px;
+    min-height: auto;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Times New Roman";
+    background-color: white;
+
+}
+
+/*//profile*/
+/* Your existing CSS styles here */
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.profile-table td {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .profile-table {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-table {
+        width: 100%;
+    }
+}
+
+/*//download*/
+
+
+/*//map*/
+  .my-form {
+      color: #305896;
+  }
+.my-form .btn-default {
+    background-color: #305896;
+    color: #fff;
+    border-radius: 0;
+}
+.my-form .btn-default:hover {
+    background-color: #4498C6;
+    color: #fff;
+}
+.my-form .form-control {
+    border-radius: 0;
+}
+
